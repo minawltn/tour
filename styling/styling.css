@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: #ffbd35;
+  font-family: "Bai Jamjuree", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  padding: 50px;
+}
+
+h1 a:link {
+  text-decoration: none;
+  color: #ffbd35;
+}
+h1 a:visited {
+  text-decoration: none;
+  color: #ffbd35;
+}
+h1 a:hover {
+  text-decoration: none;
+  color: #ffbd35;
+}
+h1 a:active {
+  text-decoration: none;
+  color: #ffbd35;
+}
+
+.wrapper {
+  background: black;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  margin: 32px 0;
+}
+
+nav ul li a {
+  color: #cbf3f0;
+  font-family: "Roboto", sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  letter-spacing: 8px;
+  position: relative;
+}
+
+nav ul li a::after {
+  content: "";
+  width: 0%;
+  height: 8px;
+  background: #f94144;
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  transition: all 550ms;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
